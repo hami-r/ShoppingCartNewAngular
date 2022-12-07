@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 m-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="card m-auto shadow" style="width: 50%; background-color: #fdfcfc ;">
+                        <div class="card-header bold text-center">Admin Login Now</div>
+                        <div class="card-body">
+                            <div class="row g-3 m-3">
+                                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                    <label for="" class="form-label">Username</label>
+                                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                    <label for="" class="form-label">Password</label>
+                                    <input name="password" [(ngModel)]="password" type="password" name="" id=""
+                                        class="form-control">
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                                    <a><button (click)="adminLogin()" class="btn btn-dark">Login</button></a>
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                                    <a routerLink="/login" class="btn btn-warning text-decoration-none">Goto User
+                                        Login</a>
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                                    <a routerLink="/signup" class="btn btn-warning text-decoration-none">Goto User
+                                        SignUp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
