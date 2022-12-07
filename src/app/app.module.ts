@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegComponent } from './user-reg/user-reg.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 
 let myRoutes:Routes = [
   {
@@ -28,7 +29,8 @@ let myRoutes:Routes = [
     AppComponent,
     AdminLoginComponent,
     UserLoginComponent,
-    UserRegComponent
+    UserRegComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
