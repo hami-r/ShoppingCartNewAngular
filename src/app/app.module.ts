@@ -11,6 +11,7 @@ import { UserRegComponent } from './user-reg/user-reg.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { SearchProductComponent } from './search-product/search-product.component';
 
 let myRoutes:Routes = [
   {
@@ -32,6 +33,10 @@ let myRoutes:Routes = [
   {
     path:"view",
     component:ViewProductComponent
+  },
+  {
+    path:"search",
+    component:SearchProductComponent
   }
 ]
 @NgModule({
@@ -42,7 +47,8 @@ let myRoutes:Routes = [
     UserRegComponent,
     AdminNavbarComponent,
     AddProductComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    SearchProductComponent
   ],
   imports: [
     BrowserModule,
