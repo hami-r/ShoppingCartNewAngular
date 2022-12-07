@@ -12,6 +12,28 @@
                     <button (click)="searchProduct()" class="btn btn-dark">Search</button>
                 </div>
             </div>
+            <div class="row g-3 m-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table" *ngIf="hide">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of searchData">
+                                <td>{{i.name}}</td>
+                                <td>{{i.description}}</td>
+                                <td>{{i.category}}</td>
+                                <td>{{i.price}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </div>
