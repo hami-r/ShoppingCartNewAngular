@@ -19,11 +19,11 @@ export class AdminLoginComponent {
     }
     console.log(data);
 
-    // if (this.username=="admin" && this.password=="12345") {
-    //   this.route.navigate(['/add'])
-    // } else {
-    //   alert("Invlalid Credentials")
-    // }
+    if (this.username=="admin" && this.password=="12345") {
+      this.route.navigate(['/add'])
+    } else {
+      alert("Invlalid Credentials")
+    }
     
   }
 }
