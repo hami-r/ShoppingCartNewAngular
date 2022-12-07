@@ -7,6 +7,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { UserRegComponent } from './user-reg/user-reg.component';
 
 let myRoutes:Routes = [
   {
@@ -16,13 +17,18 @@ let myRoutes:Routes = [
   {
     path:"userlogin",
     component:UserLoginComponent
+  },
+  {
+    path:"userreg",
+    component:UserRegComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    UserRegComponent
   ],
   imports: [
     BrowserModule,

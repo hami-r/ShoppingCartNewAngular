@@ -9,12 +9,12 @@ import { Router } from '@angular/router';
 export class UserLoginComponent {
   constructor(private route:Router) {}
 
-  username = ""
+  email = ""
   password = ""
 
   readValues = () => {
     let data = {
-      "username": this.username,
+      "email": this.email,
       "password": this.password
     }
     console.log(data);
