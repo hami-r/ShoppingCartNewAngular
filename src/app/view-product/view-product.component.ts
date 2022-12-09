@@ -11,6 +11,8 @@ export class ViewProductComponent {
     this.api.fetchProduct().subscribe(
       (response:any) => {
         this.product=response
+        console.log(response);
+        
         
       }
     )
