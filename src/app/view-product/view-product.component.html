@@ -8,6 +8,7 @@
                     <table class="table">
                         <thead>
                             <tr>
+                                <th>Image</th>
                                 <th>Name</th>
                                 <th>Description</th>
                                 <th>Category</th>
@@ -16,6 +17,7 @@
                         </thead>
                         <tbody>
                             <tr *ngFor="let i of product">
+                                <td><img height="100px" width="100px" src={{i.image}}></td>
                                 <td>{{i.name}}</td>
                                 <td>{{i.description}}</td>
                                 <td>{{i.category}}</td>

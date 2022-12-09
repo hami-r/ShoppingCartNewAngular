@@ -25,11 +25,9 @@ export class UserLoginComponent {
           alert("Invalid credentials")
         } else {
           this.verifyData=response
-          if(this.email==this.verifyData.email && this.password==this.verifyData.password){
             this.route.navigate(['/userview'])
           }
         }
-      }
     )
     
   }
