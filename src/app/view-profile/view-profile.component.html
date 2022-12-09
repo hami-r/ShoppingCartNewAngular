@@ -1,0 +1,21 @@
+<app-user-navbar></app-user-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 m-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="card m-auto" style="width: 18rem;">
+                        <div class="card-header bold text-center">User Profile</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Name: {{fetchedData[0].name}}</h5>
+                          <p class="card-text">Address: {{fetchedData[0].address}}</p>
+                          <p class="card-text">Email: {{fetchedData[0].email}}</p>
+                          <p class="card-text">Phone No: {{fetchedData[0].phoneNo}}</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

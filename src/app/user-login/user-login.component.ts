@@ -22,10 +22,10 @@ export class UserLoginComponent {
     this.api.verify(data).subscribe(
       (response:any) => {
         if (response.status == "success") {
-          let userId:any =response.id
+          let userId:any =response.userId
           console.log(userId);
           localStorage.setItem("userInfo",userId)
-          this.route.navigate(['/userview'])
+          this.route.navigate(['/viewprofile'])
         } else {
           alert("Invalid credentials")
           }

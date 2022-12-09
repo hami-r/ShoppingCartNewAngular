@@ -14,6 +14,8 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { ViewSearchComponent } from './view-search/view-search.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 
 let myRoutes:Routes = [
   {
@@ -43,6 +45,10 @@ let myRoutes:Routes = [
   {
     path:"userview",
     component:ViewSearchComponent
+  },
+  {
+    path:"viewprofile",
+    component:ViewProfileComponent
   }
 ]
 @NgModule({
@@ -55,7 +61,9 @@ let myRoutes:Routes = [
     AddProductComponent,
     ViewProductComponent,
     SearchProductComponent,
-    ViewSearchComponent
+    ViewSearchComponent,
+    ViewProfileComponent,
+    UserNavbarComponent
   ],
   imports: [
     BrowserModule,
